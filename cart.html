@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cart</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Cinzel|Unica+One|Cinzel+Decorative|Righteous" rel="stylesheet">
+<link rel="icon" type="png" href="images/logo.png">
+</head>
+
+<body>
+	<div id = "load">
+		<div>
+			JavaScript is loading...
+		</div>
+		<div class="dotLoader"><span id="first"> &#9737; </span><span id="second"> &#9737; </span><span id="third"> &#9737; </span></div>
+		<div>We'll take you there in a moment</div>
+	</div>
+	<!--Navigation-->
+	<header>
+		<div id="blocker"></div>
+		<div id="compass">
+			<div id="cL1" class="tAn" onMouseOver="hoverA()" onMouseOut="leave()"><a href="about.html">About us</a></div>
+			<div id="cL2">
+				<div id="cLS" class="tAn" onMouseOver="hoverS()" onMouseOut="leave()"><a href="sell.html">Sell</a></div>
+				<div id="cLN"><img src="images/compass.png"></div>
+				<div id="cLC" class="current"><a href="cart.html">Cart</a></div>
+			</div>
+			<div id="cL3" class="tAn" onMouseOver="hoverL()" onMouseOut="leave()"><a href="listing.html">Listings</a></div>
+		</div>
+		<div id="navO"><div class="slide" id="navTD"><a href="index.html">OmnisciencE</a></div></div>
+		<div class="navB" onclick="toggleOF()"><img id="comI" src="images/logo.png"></div>
+	</header>
+	<!--End of Navigation-->
+	
+	<div id="Etitle">CarT</div>
+	<div class="messageC">
+		your cart is empty
+	</div>
+	
+	<footer class="foot">
+		<span> © 2017 OMNISCIENCE</span>
+		<br>
+		<strong>ALL RIGHTS RESERVED</strong>
+	</footer>
+	<script>
+		function toggleOF() {
+		var a = document.getElementById('comI');
+		var x = document.getElementById('navO');
+		var y = document.getElementById('blocker');
+		var z = document.getElementById('compass');
+		if (x.style.width === '100%') {
+			x.style.width = '0%';
+			x.style.opacity = '0';
+			x.style.textAlign = 'left';
+		} else {
+			x.style.width = '100%';
+			x.style.opacity = '1';
+			x.style.textAlign = 'center';
+		}
+
+		if (y.style.display === 'block') {
+			y.style.display = 'none';
+		} else {
+			y.style.display = 'block';
+		}
+
+		if (z.style.marginTop === '135px') {
+			z.style.marginTop = '-550px';
+			z.style.opacity = '0';
+		} else {
+			z.style.marginTop = '135px';
+			z.style.opacity = '1';
+		}
+
+
+		if (a.style.transform  === 'rotate(360deg)') {
+			a.style.transform  = 'rotate(0deg)';
+		} else {
+			a.style.transform  = 'rotate(360deg)';
+		}
+		}
+		
+		function hoverA(){
+			var c = document.getElementById('cLN')
+			c.style.transform  = 'rotate(-90deg)';
+		}
+		
+		function hoverS(){
+			var c = document.getElementById('cLN')
+			c.style.transform  = 'rotate(180deg)';
+		}
+		
+		function hoverL(){
+			var c = document.getElementById('cLN')
+			c.style.transform  = 'rotate(90deg)';
+		}
+		
+		function leave(){
+			var c = document.getElementById('cLN')
+			c.style.transform  = 'rotate(0deg)';
+		}
+	</script>
+</body>
+</html>

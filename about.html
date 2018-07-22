@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Cinzel|Unica+One|Cinzel+Decorative|Righteous" rel="stylesheet">
+<link rel="icon" type="png" href="images/logo.png">
+</head>
+
+<body>
+	<div id = "load">
+		<div>
+			JavaScript is loading...
+		</div>
+		<div class="dotLoader"><span id="first"> &#9737; </span><span id="second"> &#9737; </span><span id="third"> &#9737; </span></div>
+		<div>We'll take you there in a moment</div>
+	</div>
+	<!--Navigation-->
+	<header>
+		<div id="blocker"></div>
+		<div id="compass">
+			<div id="cL1" class="current"><a href="about.html">About us</a></div>
+			<div id="cL2">
+				<div id="cLS" class="tAn" onMouseOver="hoverS()" onMouseOut="leave()"><a href="sell.html">Sell</a></div>
+				<div id="cLN"><img id="ANe" src="images/compass.png"></div>
+				<div id="cLC" class="tAn" onMouseOver="hoverC()" onMouseOut="leave()"><a href="cart.html">Cart</a></div>
+			</div>
+			<div id="cL3" class="tAn" onMouseOver="hoverL()" onMouseOut="leave()"><a href="listing.html">Listings</a></div>
+		</div>
+		<div id="navO"><div class="slide" id="navTD"><a href="index.html">OmnisciencE</a></div></div>
+		<div class="navB" onclick="toggleOF()"><img id="comI" src="images/logo.png"></div>
+	</header>
+	<!--End of Navigation-->
+	
+	<div id="Etitle">
+	About uS
+	</div>
+		<img class="bgPic" src="images/background.jpg">
+		<img class="dummyPic" src="images/background.jpg">
+
+	<div class="artContain">
+		<h1>Who are we?</h1>
+		<p>
+			<strong>Snap, List, Sell.</strong>
+		<br>
+		 Omniscience is a online marketplace that makes selling your old books as simple as taking a photo. We are on a mission to make online buying and selling accessible to all while creating a safe, friendly and helpful community of happy users!
+		</p>
+		<p>We have a vision to change the world with knowledge, with our tag-line the 
+		<br>
+			<strong>"The compass of the knowledge seekers"</strong>
+		<br>
+		we want people to reuse such vessels of knowledge to better our society, and let it be a beacon of guiding light for the knowledge seekers
+		</p>
+		<p>
+			Omniscience is a non-profit platform, therefore rest assured for there will be no commision charges or whatsoever, we simply want our vistors to just sit back and enjoy the experience of shopping and selling with us.
+		</p>
+		
+		<h1>Frequently asked questions</h1>
+		
+		<button class="accordion wipe">Lecturer, please read.</button>
+		<div class="panel">
+		  <p>Hello Mr Goh, I suppose or if you are another lectuer, hello too. This is quick brief regarding my website, it is a ecommerce site with media quereies tested on max width 1366px, 1024px and 480px, due to the fact that we are not linking the website to php this website will not be a dynamic web page, thus individual pages for the items and the cart page would be pretty much empty. However please do review my javascript! I am really exited to share them with you! This assignment I have only used only one Jquery reason being that i dislike using other people's codes as I dosen't belong to me. The javascript I have code ranges from the dynamic serach function in listing page to pure javascript animation without the use of Jquery. To access listing filter click on the cicular side tab (It haves a on-scroll event on it to track length of page with animations!) on the left of the page, the search and category function are fucntional, do remember to apply filter after you have picked you category. I hope you enjoy you experience on my page, thank you for reading through!</p>
+		</div>
+		
+		<button class="accordion wipe">The music at the landing page.</button>
+		<div class="panel">
+		  <p>The name of the song being played at the landing page is 'I Believe' from "The Chinese Botanist's Daughters", it is by one of my favourite composers Eric Levi. I designed the landing page for vistors to relax after a long day of hard work with its soothing rythm and calming hums. To accesss the landing page again click on the compass at top right and then click on the header Omniscience, I hope you enjoyed the music and have a good day.</p>
+		</div>
+		
+		<button class="accordion wipe">The chinese character for the logo.</button>
+		<div class="panel">
+		  <p>The chinese character is pronouced as 'qing' which simply means clarity in chinese. Its designed this way to bring a contrasing effect between both english and chinese characters, and the concept behind it is to bring clarity to knowledge seekers like a the compass guiding a trekker lost in a humongous jungle of knowledge.</p>
+		</div>
+		
+		<button class="accordion wipe">How purchase a book?</button>
+		<div class="panel">
+		  <p>The marketplace is overflowing with retail goodness! Once you've found an book that you fancy, chat with the seller to get more information about the item and confirm the deal when you've made up your mind about purchasing!</p>
+		</div>
+
+		<button class="accordion wipe">Why is my account suspended?</button>
+		<div class="panel">
+		  <p>You could be a repeated offender or your account is found to be created for the sole purpose of selling prohibited items. You could also be under investigation due to reports of misconduct from other users that is against our Community Guidelines. </p>
+		</div>
+
+		<button class="accordion wipe">How can I report fraudulent behaviour?</button>
+		<div class="panel">
+		  <p>If you suspect that there has been a scam or fraudulent behaviour on Omniscience, or if you are a victim of a scam, please report this to the Omniscience support team as soon as possible so that we can assist you.</p>
+		</div>
+		
+		<h1>Drop us a message!</h1>
+		<p>Write us anything, an issue, a query or even a reccomendation, we would be glad to hear from you!</p>
+		<form class="innerF">
+			<ul>
+			<li>
+				<label for="name">Name</label>
+				<input type="text" name="name" maxlength="100">
+				<span>Enter your full name here</span>
+			</li>
+			<li>
+				<label for="email">Email</label>
+				<input type="email" name="email" maxlength="100">
+				<span>Enter a valid email address</span>
+			</li>
+			<li>
+				<label for="mobile">Mobile</label>
+				<input type="text" name="mobile" maxlength="8">
+				<span>Leave us your contact</span>
+			</li>
+			<li>
+				<label for="bio">Message</label>
+				<textarea name="bio" onkeyup="adjust_textarea(this)"></textarea>
+				<span>Report an issue or provide feedback</span>
+			</li>
+			<li>
+				<input type="submit" value="Submit" >
+			</li>
+			</ul>
+		</form>
+	</div>
+	<footer>
+		<span> © 2017 OMNISCIENCE</span>
+		<br>
+		<strong>ALL RIGHTS RESERVED</strong>
+	</footer>
+	<script type="text/javascript">
+	//auto expand textarea
+	function adjust_textarea(h) {
+		h.style.height = "20px";
+		h.style.height = (h.scrollHeight)+"px";
+	}
+	</script>
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].onclick = function(){
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			}
+		}
+		
+		function toggleOF() {
+		var a = document.getElementById('comI');
+		var x = document.getElementById('navO');
+		var y = document.getElementById('blocker');
+		var z = document.getElementById('compass');
+		if (x.style.width === '100%') {
+			x.style.width = '0%';
+			x.style.opacity = '0';
+			x.style.textAlign = 'left';
+		} else {
+			x.style.width = '100%';
+			x.style.opacity = '1';
+			x.style.textAlign = 'center';
+		}
+
+		if (y.style.display === 'block') {
+			y.style.display = 'none';
+		} else {
+			y.style.display = 'block';
+		}
+
+		if (z.style.marginTop === '135px') {
+			z.style.marginTop = '-550px';
+			z.style.opacity = '0';
+		} else {
+			z.style.marginTop = '135px';
+			z.style.opacity = '1';
+		}
+
+
+		if (a.style.transform  === 'rotate(360deg)') {
+			a.style.transform  = 'rotate(0deg)';
+		} else {
+			a.style.transform  = 'rotate(360deg)';
+		}
+		}
+		
+		function hoverC(){
+			var c = document.getElementById('cLN')
+			c.style.transform  = 'rotate(90deg)';
+		}
+		
+		function hoverS(){
+			var c = document.getElementById('cLN')
+			c.style.transform  = 'rotate(270deg)';
+		}
+		
+		function hoverL(){
+			var c = document.getElementById('cLN')
+			c.style.transform  = 'rotate(180deg)';
+		}
+		
+		function leave(){
+			var c = document.getElementById('cLN')
+			c.style.transform  = 'rotate(0deg)';
+		}
+	</script>
+</body>
+</html>

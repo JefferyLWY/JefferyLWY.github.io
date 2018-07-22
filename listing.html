@@ -1,0 +1,587 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Listing</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Cinzel|Unica+One|Cinzel+Decorative|Righteous" rel="stylesheet">
+<link rel="icon" type="png" href="images/logo.png">
+</head>
+
+<body>
+	<div id = "load">
+		<div>
+			JavaScript is loading...
+		</div>
+		<div class="dotLoader"><span id="first"> &#9737; </span><span id="second"> &#9737; </span><span id="third"> &#9737; </span></div>
+		<div>We'll take you there in a moment</div>
+	</div>
+	<!--Navigation-->
+	<header>
+		<div id="blocker"></div>
+		<div id="compass">
+			<div id="cL1" class="tAn" onMouseOver="hoverA()" onMouseOut="leave()"><a href="about.html">About us</a></div>
+			<div id="cL2">
+				<div id="cLS" class="tAn" onMouseOver="hoverS()" onMouseOut="leave()"><a href="sell.html">Sell</a></div>
+				<div id="cLN"><img id="LNe" src="images/compass.png"></div>
+				<div id="cLC" class="tAn" onMouseOver="hoverC()" onMouseOut="leave()"><a href="cart.html">Cart</a></div>
+			</div>
+			<div id="cL3" class="current"><a href="listing.html">Listings</a></div>
+		</div>
+		<div id="navO"><div class="slide" id="navTD"><a href="index.html">OmnisciencE</a></div></div>
+		<div class="navB" onclick="toggleOF()"><img id="comI" src="images/logo.png"></div>
+	</header>
+	<!--End of Navigation-->
+	
+	<!--Filter-->
+	<div id="filter" onClick="openNav()">
+		<div class="filterH">
+			FilterS
+		<div id="percent">0%</div>
+		</div>
+		<div class="loader"></div>
+	</div>
+	
+	<div id="fArea">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<form id="filterForm">
+			<fieldset class="Ffs">
+				<legend>Filters</legend>
+				<label>Book Title</label>
+				<hr>
+				<input type="text" name ="Fname" id="BkTitle" onkeyup="searchF()" placeholder="&#128270; Book title.."/>
+				<br>
+				<p></p>
+				<label>Price Range</label>
+				<hr>
+				<input type="text" name ="min" class="PriceR" placeholder="Min."/>
+				&nbsp; ~ &nbsp;
+				<input type="text" name ="max" class="PriceR" placeholder="Max."/>
+				<br>
+				<p></p>
+				<label>Category</label>
+				<hr>
+				<select id="selectO">
+				  <option value="0" selected>All</option>
+				  <option value="1">Technology</option>
+				  <option value="2">Science</option>
+				  <option value="3">Design</option>
+				</select>
+				<br>
+				<p></p>
+			</fieldset>
+		</form>
+		<div class="Fbutton" onClick="resetForm()">Clear</div>
+		<div class="Fbutton" onClick="selectCat()">Apply</div>
+	</div>
+	<!--End of filter-->
+	
+	<!--Main contents-->
+	<div id="list">
+		<div id="Etitle">ListingS</div>
+		<!--JQuery starts here-->
+		<div class="sliderCont">
+			<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
+				<!-- Loading Screen -->
+				<div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
+					<div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+					<div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+				</div>
+				<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
+					<div>
+						<img data-u="image" src="img/red.jpg" />
+					</div>
+					<div>
+						<img data-u="image" src="img/purple.jpg" />
+					</div>
+					<div>
+						<img data-u="image" src="img/blue.jpg" />
+					</div>
+					<a data-u="any" href="http://www.jssor.com" style="display:none">Full Width Slider</a>
+				</div>
+				<!-- Bullet Navigator -->
+				<div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+					<!-- bullet navigator item prototype -->
+					<div data-u="prototype" style="width:16px;height:16px;"></div>
+				</div>
+				<!-- Arrow Navigator -->
+				<span data-u="arrowleft" class="jssora22l" style="top:0px;left:8px;width:40px;height:58px;" data-autocenter="2"></span>
+				<span data-u="arrowright" class="jssora22r" style="top:0px;right:8px;width:40px;height:58px;" data-autocenter="2"></span>
+			</div>
+		</div>
+		<!--Item list starts here-->
+		<ul id="listUL">
+  		<!--Technology books-->
+	  	<!--The Pragmatic Programmer-->
+		  <li><a href="#">The Pragmatic Programmer</a>
+			<div class="itemCont">
+				<div class="OicImage">
+				<img src="images/Prag.jpg">
+				</div>
+				<div class="OicContent">
+					<div class="SicContO">
+						<div class="TicContent"><strong>Title:</strong> The Pragmatic Programmer</div>
+						<div class="TicContent"><strong>Price:</strong> $18.50</div>
+						<div class="TicContent"><strong>Author:</strong> Andy Hunt</div>
+						<div class="TicContent"><strong>Category:</strong> Technology</div>
+					</div>
+					<div class="SicButtons">
+						<div>Contact</div>
+						<div>Purchase</div>
+					</div>
+				</div>
+			</div>
+		  </li>
+		  <!--The Art of Computer Programming-->
+		  <li><a href="#">The Art of Computer Programming</a>
+			<div class="itemCont">
+				<div class="OicImage">
+				<img src="images/Art.jpg">
+				</div>
+				<div class="OicContent">
+					<div class="SicContO">
+						<div class="TicContent"><strong>Title:</strong> The Art of Computer Programming</div>
+						<div class="TicContent"><strong>Price:</strong> $20.00</div>
+						<div class="TicContent"><strong>Author:</strong> Donald Knuth</div>
+						<div class="TicContent"><strong>Category:</strong> Technology</div>
+					</div>
+					<div class="SicButtons">
+						<div>Contact</div>
+						<div>Purchase</div>
+					</div>
+				</div>
+			</div>
+		  </li>
+		  <!--Title: JavaScript: The Good Parts-->
+		  <li><a href="#">Title: JavaScript The Good Parts</a>
+			<div class="itemCont">
+				<div class="OicImage">
+				<img src="images/Javascript.jpg">
+				</div>
+				<div class="OicContent">
+					<div class="SicContO">
+						<div class="TicContent"><strong>Title:</strong> JavaScript: The Good Parts</div>
+						<div class="TicContent"><strong>Price:</strong> $15.80</div>
+						<div class="TicContent"><strong>Author:</strong> Douglas Crockford</div>
+						<div class="TicContent"><strong>Category:</strong> Technology</div>
+					</div>
+					<div class="SicButtons">
+						<div>Contact</div>
+						<div>Purchase</div>
+					</div>
+				</div>
+			</div>
+		  </li>
+		  <!--Learn Python the Hard Way-->
+		  <li><a href="#">Learn Python the Hard Way</a>
+			<div class="itemCont">
+				<div class="OicImage">
+				<img src="images/Python.jpg">
+				</div>
+				<div class="OicContent">
+					<div class="SicContO">
+						<div class="TicContent"><strong>Title:</strong> Learn Python the Hard Way</div>
+						<div class="TicContent"><strong>Price:</strong> $16.00</div>
+						<div class="TicContent"><strong>Author:</strong> Zed A. Shaw</div>
+						<div class="TicContent"><strong>Category:</strong> Technology</div>
+					</div>
+					<div class="SicButtons">
+						<div>Contact</div>
+						<div>Purchase</div>
+					</div>
+				</div>
+			</div>
+		  </li>
+		  
+		  <!--Science books-->
+		  <!--The Elegant Universe-->
+		  <li><a href="#">The Elegant Universe</a>
+			<div class="itemCont">
+				<div class="OicImage">
+				<img src="images/Universe.jpg">
+				</div>
+				<div class="OicContent">
+					<div class="SicContO">
+						<div class="TicContent"><strong>Title:</strong> The Elegant Universe</div>
+						<div class="TicContent"><strong>Price:</strong> $22.00</div>
+						<div class="TicContent"><strong>Author:</strong> Brian Greene</div>
+						<div class="TicContent"><strong>Category:</strong> Science</div>
+					</div>
+					<div class="SicButtons">
+						<div>Contact</div>
+						<div>Purchase</div>
+					</div>
+				</div>
+			</div>
+		  </li>
+		  <!--The Fabric of the Cosmos-->
+		  <li><a href="#">The Fabric of the Cosmos</a>
+			<div class="itemCont">
+				<div class="OicImage">
+				<img src="images/Cosmos.jpg">
+				</div>
+				<div class="OicContent">
+					<div class="SicContO">
+						<div class="TicContent"><strong>Title:</strong> The Fabric of the Cosmos</div>
+						<div class="TicContent"><strong>Price:</strong> $21.20</div>
+						<div class="TicContent"><strong>Author:</strong> Brian Greene</div>
+						<div class="TicContent"><strong>Category:</strong> Science</div>
+					</div>
+					<div class="SicButtons">
+						<div>Contact</div>
+						<div>Purchase</div>
+					</div>
+				</div>
+			</div>
+		  </li>
+		  <!--On Growth and Form-->
+		  <li><a href="#">On Growth and Form</a>
+			<div class="itemCont">
+				<div class="OicImage">
+				<img src="images/Growth.jpg">
+				</div>
+				<div class="OicContent">
+					<div class="SicContO">
+						<div class="TicContent"><strong>Title:</strong> On Growth and Form</div>
+						<div class="TicContent"><strong>Price:</strong> $19.50</div>
+						<div class="TicContent"><strong>Author:</strong> D'Arcy Wentworth Thompson</div>
+						<div class="TicContent"><strong>Category:</strong> Science</div>
+					</div>
+					<div class="SicButtons">
+						<div>Contact</div>
+						<div>Purchase</div>
+					</div>
+				</div>
+			</div>
+		  </li>
+		  <!--Nothing-->
+		  <li><a href="#">Nothing</a>
+			<div class="itemCont">
+				<div class="OicImage">
+				<img src="images/Nothing.jpg">
+				</div>
+				<div class="OicContent">
+					<div class="SicContO">
+						<div class="TicContent"><strong>Title:</strong> Nothing</div>
+						<div class="TicContent"><strong>Price:</strong> $17.00</div>
+						<div class="TicContent"><strong>Author:</strong> Jeremy Webb</div>
+						<div class="TicContent"><strong>Category:</strong> Science</div>
+					</div>
+					<div class="SicButtons">
+						<div>Contact</div>
+						<div>Purchase</div>
+					</div>
+				</div>
+			</div>
+		  </li>
+		  <!--Proof: The Science of Booze-->
+		  <li><a href="#">Proof The Science of Booze</a>
+			<div class="itemCont">
+				<div class="OicImage">
+				<img src="images/Proof.jpg">
+				</div>
+				<div class="OicContent">
+					<div class="SicContO">
+						<div class="TicContent"><strong>Title:</strong> Proof: The Science of Booze</div>
+						<div class="TicContent"><strong>Price:</strong> $18.50</div>
+						<div class="TicContent"><strong>Author:</strong> Adam Rogers</div>
+						<div class="TicContent"><strong>Category:</strong> Science</div>
+					</div>
+					<div class="SicButtons">
+						<div>Contact</div>
+						<div>Purchase</div>
+					</div>
+				</div>
+			</div>
+		  </li>
+		  <!--Physics of the Impossible-->
+		  <li><a href="#">Physics of the Impossible</a>
+			<div class="itemCont">
+				<div class="OicImage">
+				<img src="images/Physics.jpg">
+				</div>
+				<div class="OicContent">
+					<div class="SicContO">
+						<div class="TicContent"><strong>Title:</strong> Physics of the Impossible</div>
+						<div class="TicContent"><strong>Price:</strong> $18.50</div>
+						<div class="TicContent"><strong>Author:</strong> Michio Kaku</div>
+						<div class="TicContent"><strong>Category:</strong> Science</div>
+					</div>
+					<div class="SicButtons">
+						<div>Contact</div>
+						<div>Purchase</div>
+					</div>
+				</div>
+			</div>
+		  </li>
+		  
+		  <!--Design books-->
+		  <!--The Laws of Simplicity-->
+		  <li><a href="#">The Laws of Simplicity</a>
+			<div class="itemCont">
+				<div class="OicImage">
+				<img src="images/Simplicity.jpg">
+				</div>
+				<div class="OicContent">
+					<div class="SicContO">
+						<div class="TicContent"><strong>Title:</strong> The Laws of Simplicity</div>
+						<div class="TicContent"><strong>Price:</strong> $21.00</div>
+						<div class="TicContent"><strong>Author:</strong> John Maeda</div>
+						<div class="TicContent"><strong>Category:</strong> Design</div>
+					</div>
+					<div class="SicButtons">
+						<div>Contact</div>
+						<div>Purchase</div>
+					</div>
+				</div>
+			</div>
+		  </li>
+		  <!--A Smile in the Mind-->
+		  <li><a href="#">A Smile in the Mind</a>
+			<div class="itemCont">
+				<div class="OicImage">
+				<img src="images/Smile.jpg">
+				</div>
+				<div class="OicContent">
+					<div class="SicContO">
+						<div class="TicContent"><strong>Title:</strong> A Smile in the Mind</div>
+						<div class="TicContent"><strong>Price:</strong> $18.00</div>
+						<div class="TicContent"><strong>Author:</strong> Beryl McAlhone</div>
+						<div class="TicContent"><strong>Category:</strong> Design</div>
+					</div>
+					<div class="SicButtons">
+						<div>Contact</div>
+						<div>Purchase</div>
+					</div>
+				</div>
+			</div>
+		  </li>
+		  <!--Designing Brand Identity-->
+		  <li><a href="#">Designing Brand Identity</a>
+			<div class="itemCont">
+				<div class="OicImage">
+				<img src="images/Design.jpg">
+				</div>
+				<div class="OicContent">
+					<div class="SicContO">
+						<div class="TicContent"><strong>Title:</strong> Designing Brand Identity</div>
+						<div class="TicContent"><strong>Price:</strong> $16.00</div>
+						<div class="TicContent"><strong>Author:</strong> Alina Wheeler </div>
+						<div class="TicContent"><strong>Category:</strong> Design</div>
+					</div>
+					<div class="SicButtons">
+						<div>Contact</div>
+						<div>Purchase</div>
+					</div>
+				</div>
+			</div>
+		  </li>
+		  <!--The Design of Everyday Things-->
+		  <li><a href="#">The Design of Everyday Things</a>
+			<div class="itemCont">
+				<div class="OicImage">
+				<img src="images/Everyday.jpg">
+				</div>
+				<div class="OicContent">
+					<div class="SicContO">
+						<div class="TicContent"><strong>Title:</strong> The Design of Everyday Things</div>
+						<div class="TicContent"><strong>Price:</strong> $17.60</div>
+						<div class="TicContent"><strong>Author:</strong> Don Norman</div>
+						<div class="TicContent"><strong>Category:</strong> Design</div>
+					</div>
+					<div class="SicButtons">
+						<div>Contact</div>
+						<div>Purchase</div>
+					</div>
+				</div>
+			</div>
+		  </li>
+		  
+		  <li><a href="#">Typography Sketchbooks</a>
+			<div class="itemCont">
+				<div class="OicImage">
+				<img src="images/Typography.jpg">
+				</div>
+				<div class="OicContent">
+					<div class="SicContO">
+						<div class="TicContent"><strong>Title:</strong> Typography Sketchbooks</div>
+						<div class="TicContent"><strong>Price:</strong> $19.90</div>
+						<div class="TicContent"><strong>Author:</strong> Lita Talarico and Steven Heller</div>
+						<div class="TicContent"><strong>Category:</strong> Design</div>
+					</div>
+					<div class="SicButtons">
+						<div>Contact</div>
+						<div>Purchase</div>
+					</div>
+				</div>
+			</div>
+		  </li>
+		  <!--End of item list-->
+		</ul>
+	</div>
+	<!--End of main content-->
+	<footer>
+		<span> © 2017 OMNISCIENCE</span>
+		<br>
+		<strong>ALL RIGHTS RESERVED</strong>
+	</footer>
+	<!-- #endregion Jssor Slider End -->
+	<!-- #region Jssor Slider Begin -->
+    <!-- Generator: Jssor Slider Maker -->
+    <!-- Source: http://www.jssor.com -->
+    <!-- This code works with jquery library. -->
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/jssor.slider-22.2.0.mini.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*you can remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*responsive code end*/
+        });
+    </script>
+	<script>
+		function searchF() {
+		var input, filter, ul, li;
+		input = document.getElementById("BkTitle");
+		filter = input.value.toUpperCase();
+		ul = document.getElementById("listUL");
+		li = ul.getElementsByTagName("li");
+		for (i = 0; i < li.length; i++) {
+			a = li[i].getElementsByTagName("a")[0];
+			if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+				li[i].style.display = "";
+			} else {
+				li[i].style.display = "none";
+
+			}
+			}
+		}
+		function resetForm() {
+			document.getElementById("filterForm").reset();
+		}
+		function selectCat() {
+			var s = document.getElementById("selectO");
+			var selection = s.options[s.selectedIndex].value;
+			if (selection === '0') {
+				window.open("listing.html","_self")
+			} else if (selection === '1'){
+				window.open("technology.html","_self")
+			} else if (selection === '2'){
+				window.open("science.html","_self")
+			} else {
+				window.open("design.html","_self")
+			} 
+		}
+		function openNav() {
+			document.getElementById("fArea").style.transform = "rotateY(0deg)";
+			document.getElementById("filter").style.marginLeft = "20%";
+			document.getElementById("list").style.marginLeft = "20%";
+		}
+
+		function closeNav() {
+			document.getElementById("fArea").style.transform = "rotateY(90deg)";
+			document.getElementById("filter").style.marginLeft= "0%";
+			document.getElementById("list").style.marginLeft = "0%";
+		}
+
+		
+		window.onscroll = function() {Fscroll()};
+
+		function Fscroll() {
+		var height = document.body.scrollHeight;
+		var cal = ((document.body.scrollTop/(height-window.innerHeight))*window.innerHeight)*0.7;
+			document.getElementById("filter").style.marginTop = cal+"px";
+			var xe = 100 * document.body.scrollTop / (document.body.scrollHeight-window.innerHeight); 
+			var x = xe.toFixed(0);
+			document.getElementById('percent').innerHTML = x + "%";
+		}
+		
+		function toggleOF() {
+		var a = document.getElementById('comI');
+		var x = document.getElementById('navO');
+		var y = document.getElementById('blocker');
+		var z = document.getElementById('compass');
+		if (x.style.width === '100%') {
+			x.style.width = '0%';
+			x.style.opacity = '0';
+			x.style.textAlign = 'left';
+		} else {
+			x.style.width = '100%';
+			x.style.opacity = '1';
+			x.style.textAlign = 'center';
+		}
+
+		if (y.style.display === 'block') {
+			y.style.display = 'none';
+		} else {
+			y.style.display = 'block';
+		}
+
+		if (z.style.marginTop === '135px') {
+			z.style.marginTop = '-550px';
+			z.style.opacity = '0';
+		} else {
+			z.style.marginTop = '135px';
+			z.style.opacity = '1';
+		}
+
+
+		if (a.style.transform  === 'rotate(360deg)') {
+			a.style.transform  = 'rotate(0deg)';
+		} else {
+			a.style.transform  = 'rotate(360deg)';
+		}
+		}
+		
+		function hoverA(){
+			var c = document.getElementById('cLN')
+			c.style.transform  = 'rotate(180deg)';
+		}
+		
+		function hoverC(){
+			var c = document.getElementById('cLN')
+			c.style.transform  = 'rotate(270deg)';
+		}
+		
+		function hoverS(){
+			var c = document.getElementById('cLN')
+			c.style.transform  = 'rotate(90deg)';
+		}
+		
+		function leave(){
+			var c = document.getElementById('cLN')
+			c.style.transform  = 'rotate(0deg)';
+		}
+	</script>
+</body>
+</html>
