@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Omniscience</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Cinzel|Unica+One|Cinzel+Decorative|Righteous" rel="stylesheet">
+<link rel="icon" type="png" href="images/logo.png">
+</head>
+
+
+<body class="main ">
+<audio class="audio" controls autoplay loop >
+  <source src="IBelieve.mp3" type="audio/mpeg">
+</audio>
+
+	
+<!--Flash load-->
+	<div class="flashD"></div>
+	<div class="bg"><img src="images/logoBG.png"></div>
+	<!--Navigation-->
+	<header id="mainHead">
+		<div id="blocker"></div>
+		<div id="compass">
+			<div id="cL1" class="tAn"><a href="about.html">About us</a></div>
+			<div id="cL2">
+				<div id="cLS" class="tAn" onMouseOver="hoverS()" onMouseOut="leave()"><a href="sell.html">Sell</a></div>
+				<div id="cLN"><img id="ANe" src="images/compass.png"></div>
+				<div id="cLC" class="tAn" onMouseOver="hoverC()" onMouseOut="leave()"><a href="cart.html">Cart</a></div>
+			</div>
+			<div id="cL3" class="tAn" onMouseOver="hoverL()" onMouseOut="leave()"><a href="listing.html">Listings</a></div>
+		</div>
+		<div class="navB" onclick="toggleOF()"><img id="comI" src="images/logo.png"></div>
+	</header>
+	<!--Level One-->
+<section class="lvl1 tAn aA">
+  <div class="parent space"> <a href="about.html"><span class="au">A</span></a> </div>
+	<div class = "adropDown rotate9 dropdowns"><span>&#171;</span></div>
+</section>
+
+<!--Level Two-->
+<section class="lvl2 ">
+ 
+  <div class="sell sA">
+   
+    <div class="parent tAnR">
+     <a href="sell.html"><span class="se">S</span></a> 
+     </div>
+     <div class = "sdropDown dropdowns"><span>&#171;</span></div>
+  </div>
+  
+  <div class="omni">
+    <div class="OmniT slide">OmnisciencE</div>
+	  <div class="OmniST">The compass of the knowledge seekers</div>
+  </div>
+  
+  <div class="cart cA">
+	  <div class="parent tAnL"> 
+	  <a href="cart.html"><span class="ca">C</span></a> 
+	  </div>
+	  <div class = "cdropDown dropdowns"><span>&#187;</span></div>
+  </div>
+  
+</section>
+
+<!--Level Three-->
+<section class="lvl3 tAn lA">
+	<div class="parent space"> <a href="listing.html"><span class="li">L</span></a> </div>
+	<div class = "ldropDown rotate9 dropdowns"><span>&#187;</span></div>
+</section>
+
+<script>
+		function toggleOF() {
+		var a = document.getElementById('comI');
+		var y = document.getElementById('blocker');
+		var z = document.getElementById('compass');
+
+		if (y.style.display === 'block') {
+			y.style.display = 'none';
+		} else {
+			y.style.display = 'block';
+		}
+
+		if (z.style.marginTop === '135px') {
+			z.style.marginTop = '-550px';
+			z.style.opacity = '0';
+		} else {
+			z.style.marginTop = '135px';
+			z.style.opacity = '1';
+		}
+
+
+		if (a.style.transform  === 'rotate(360deg)') {
+			a.style.transform  = 'rotate(0deg)';
+		} else {
+			a.style.transform  = 'rotate(360deg)';
+		}
+		}
+		
+		function hoverA(){
+			var c = document.getElementById('cLN')
+			c.style.transform  = 'rotate(270deg)';
+		}
+		
+		function hoverS(){
+			var c = document.getElementById('cLN')
+			c.style.transform  = 'rotate(180deg)';
+		}
+		
+		function hoverL(){
+			var c = document.getElementById('cLN')
+			c.style.transform  = 'rotate(90deg)';
+		}
+		
+		function leave(){
+			var c = document.getElementById('cLN')
+			c.style.transform  = 'rotate(0deg)';
+		}
+	</script>
+</body>
+</html>
